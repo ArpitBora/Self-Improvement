@@ -32,6 +32,9 @@ public class HelloWorldModel {
 
     @Inject @Named("sling:resourceType") @Default(values="No resourceType")
     protected String resourceType;
+    
+    @Inject @Default(values="Please Enter Some Text")
+    protected String text;
 
     private String message;
 
@@ -44,5 +47,9 @@ public class HelloWorldModel {
 
     public String getMessage() {
         return message;
+    }
+
+    public String getText() {
+        return text;
     }
 }
